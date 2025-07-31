@@ -17,4 +17,5 @@ module "compute" {
   zone         = "us-central1-a"
   image        = "debian-cloud/debian-12"
   network      = module.vpc.network_self_link
+  subnetwork   = module.vpc.subnetwork_self_link
 }
