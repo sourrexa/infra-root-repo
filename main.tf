@@ -5,7 +5,7 @@ module "vpc" {
 }
 
 module "bucket" {
-  source   = "git::https://github.com/sourrexa/terraform-gcp-modules.git//bucket?ref=v1.0.0//bucket?ref=v1.0.0"
+  source   = "git::https://github.com/sourrexa/terraform-gcp-modules.git//bucket?ref=v1.0.0"
   name     = "my-demo-bucket"
   location = "us-central1"
 }
