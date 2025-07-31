@@ -1,6 +1,7 @@
 module "vpc" {
   source                  = "git::https://github.com/sourrexa/terraform-gcp-modules.git//vpc?ref=v1.0.0"
   name                    = "my-vpc"
+  region                  = "us-central1"
   auto_create_subnetworks = false
 }
 
