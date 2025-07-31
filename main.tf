@@ -6,7 +6,7 @@ module "vpc" {
 
 module "bucket" {
   source   = "git::https://github.com/sourrexa/terraform-gcp-modules.git//bucket?ref=v1.0.0"
-  name     = "my-demo-bucket"
+  name     = "my-demo-bucket-5678"
   location = "us-central1"
 }
 
@@ -17,4 +17,5 @@ module "compute" {
   zone         = "us-central1-a"
   image        = "debian-cloud/debian-12"
   network      = module.vpc.network_self_link
+  subnetwork   = module.vpc.subnetwork_self_link
 }
