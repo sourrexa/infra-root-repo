@@ -21,7 +21,7 @@ module "compute" {
   subnetwork   = module.vpc.subnetwork_self_link
 }
 
-module "compute" {
+module "compute_vm" {
   source       = "git::https://github.com/sourrexa/terraform-gcp-modules.git//compute?ref=v1.0.0"
   name         = "vm-2"
   machine_type = "e2-medium"
